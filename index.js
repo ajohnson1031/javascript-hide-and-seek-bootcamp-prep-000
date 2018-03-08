@@ -11,7 +11,7 @@ function increaseRankBy(n) {
 
   for(let i in targ) {
     let x = parseInt(targ[i].innerHTML) + n
-    targ[i].innerHTML(x)
+    targ[i].innerHTML = x
   }
 
 }
