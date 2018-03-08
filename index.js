@@ -5,5 +5,5 @@ function getFirstSelector(x) {
 function nestedTarget(n, t) {
   let nested = n
   let target = t
-  return document.querySelectorAll(`#${nested} .${target}`)
+  return document.getElementById(`#${nested}`).querySelector(`.${target}`)
 }
