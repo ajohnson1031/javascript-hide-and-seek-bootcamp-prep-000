@@ -2,6 +2,8 @@ function getFirstSelector(x) {
   return document.querySelector(x)
 }
 
-function nestedTarget(p, c) {
-  return document.querySelectorAll(`#${p} .${c}`)
+function nestedTarget(n, t) {
+  let nested = n
+  let target = t
+  return document.querySelectorAll(`#${nested} .${target}`)
 }
